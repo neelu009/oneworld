@@ -9,6 +9,7 @@ import Pages from './Pages';
 import Contact from './Contact';
 import Blog from './Blog';
 import Servicepage from './Servicepage';
+import Partners from './Partners';
 
 
 const App = () => {
@@ -18,11 +19,12 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="About" element={<About />} />\
+        <Route path="About" element={<About />} />
         <Route path="Page" element={<Pages />} />
         <Route path="Contact" element={<Contact />} />
         <Route path='Blog' element={<Blog />} />
         <Route path='services' element={<Servicepage />} />
+        <Route path='partner' element={<Partners/>} />
 
       </Routes>
     </BrowserRouter>
