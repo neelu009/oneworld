@@ -1,34 +1,71 @@
-import React, { useRef } from 'react';
+import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Header from './common/Header'
 import Footer from './common/Footer'
 import contactimg from "./image/TD.png"
+import Alert from 'react-bootstrap/Alert';
 
 
 const Contact = () => {
 
-    const form = useRef();
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [subject, setSubject] = useState("")
+    const [message, setMessage] = useState("")
+    // console.log(email )
 
-    const sendEmail = (e) => {
+
+
+    const [show, setShow] = useState(false);
+
+    const sendEmail = async (e) => {
         e.preventDefault();
 
-        emailjs.sendForm(
-            'service_4011qjf',
-            'template_xubzh6a',
-            form.current,
-            'sKTAvKIsW880ZUSRU')
-            .then((result) => {
-                console.log(result.text);
-                console.log("message sent successfully")
-            }, (error) => {
-                console.log(error.text);
-            });
-    };
+        setName("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
+
+
+
+        const res = await fetch("/register", {
+
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            }, body: JSON.stringify({
+                name,
+                email,
+                subject,
+                message
+            })
+
+
+        });
+
+
+        console.log("res");
+
+
+        const data = await res.json();
+
+        if (data.status === 401 || !data) {
+            console.log("error")
+        } else {
+            console.log("Email sent")
+            setShow(true);
+            setEmail("")
+        }
+
+
+
+    }
     return (
         <>
+
             <Header />
 
-
+         
             <div className='contact-from-section'>
                 <div className='container'>
 
@@ -37,23 +74,22 @@ const Contact = () => {
 
 
                         <h2 class="h1-responsive font-weight-bold text-center heading-h1main">Contact us<hr /></h2>
+                        {
+                show ? <Alert variant="primary" onClose={() => setShow(false)} dismissible>
+                    Email Send Sucessfully
+                </Alert> : ""
 
+            }
+                        <div class="col mb-md-0 mb-5 ">
 
-
-
-                        <div class="col mb-md-0 mb-5 my-100">
-
-
-
-                            <form id="contact-form" ref={form} onSubmit={sendEmail}>
-
+                            <form id="contact-form" novalidate="novalidate"  autocomplete="off">
 
                                 <div class="row">
 
                                     <div class="col-md-12">
                                         <div class="md-form mb-3">
                                             <label for="name" class="">Your name</label>
-                                            <input type="text" id="name" name="user_name" class="form-control" />
+                                            <input type="text" id="name" name="name"  onChange={(e) => setName(e.target.value)} value={name} class="form-control" />
 
                                         </div>
                                     </div>
@@ -61,38 +97,35 @@ const Contact = () => {
                                     <div class="col-md-12">
                                         <div class="md-form mb-3">
                                             <label for="email" class="">Your email</label>
-                                            <input type="text" id="email" name="user_email" class="form-control" />
+                                            <input type="email" id="email" name="email"  onChange={(e) => setEmail(e.target.value)} value={email} class="form-control" />
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="md-form mb-3">
+                                            <label for="email" class="">Your subject</label>
+                                            <input type="text" id="subject" name="subject"   onChange={(e) => setSubject(e.target.value)} value={subject} class="form-control" />
 
                                         </div>
                                     </div>
 
-
                                 </div>
 
-
-
-
-                                <div class="row">
-
-
-
-
+                                    <div class="row">
                                     <div class="md-form mb-5">
                                         <label for="message">Your message</label>
-                                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                        <textarea type="text" id="message" name="message"   onChange={(e) => setMessage(e.target.value)} value={message} rows="2" class="form-control md-textarea"></textarea>
 
-                                    </div>
+                                    </div></div>
 
-                                </div>
+                               
                                 <div class="md-form mb-3">
-                                    <input type="submit" value="Send" />
+                                    <input type="submit" value="Send" onClick={sendEmail} />
                                 </div>
                             </form>
 
 
                         </div>
-
-
 
                         <div class="col text-center contact-info my-100"  >
                             <ul class="list-unstyled mb-0">
@@ -121,7 +154,7 @@ const Contact = () => {
                 </div>
             </div>
 
-<div  className='map-section'></div>
+            <div className='map-section'></div>
 
 
             <Footer />

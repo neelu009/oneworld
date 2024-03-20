@@ -19,6 +19,7 @@ hr {
 
     color: #00c12b !important;
     border-top: 3px solid !important;
+    opacity: 1 !important;
 
 }
 
@@ -438,19 +439,17 @@ p {
 }
 
 .contact-from-section .form-control {
-    padding: 1rem 0.75rem !important;
-
+    padding: 10px 0.75rem !important;
     border: 1px solid !important;
-
 }
 
 .contact-from-section label {
     display: inline-block;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .contact-from-section .col {
-    margin: 0px 65px;
+    margin: 56px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -482,8 +481,8 @@ h2.pb-3 {
 
 .contact-from-section .container {
 
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 90px;
+    margin-bottom: 90px;
     /* box-shadow: 0px 0px 12px #5a5757ab; */
     padding: 50px;
 }
