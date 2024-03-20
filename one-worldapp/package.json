@@ -13,6 +13,7 @@
     "follow-redirects": "^1.15.6",
     "mdb-react-ui-kit": "^6.3.0",
     "nth-check": "^2.1.1",
+    "postcss": "^8.4.37",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.1",
     "react-cookie-consent": "^9.0.0",
