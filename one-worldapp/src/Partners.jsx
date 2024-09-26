@@ -68,7 +68,7 @@ const Partners = () => {
                         <div class="row">
                             <h3 className='text-center py-5'> Risk management for the low carbon economy</h3>
                             <div class="col-6 ">
-                                <img src={energyimg} />
+                                <img src={energyimg} alt='energy1'/>
                             </div>
                             <div class="col-6 partner-content">
 

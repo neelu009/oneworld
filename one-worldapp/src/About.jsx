@@ -2,9 +2,6 @@ import React from 'react'
 import Header from './common/Header'
 import Footer from './common/Footer'
 import energyimg from './image/about.jpg';
-import battery from './image/company.webp';
-import oct from './image/28-Oct.png';
-import abimg from "./image/TD.png"
 const About = () => {
   return (
     <>
@@ -17,7 +14,7 @@ const About = () => {
           <h1 className='text-center heading-h1main'>About The Company</h1><hr/>
             <div class="row pt-3">
             <div class="col-6 ">
-                <img src={energyimg} />
+                <img src={energyimg}  alt='about'/>
               </div>
               <div class="col-6 about-content">
                 

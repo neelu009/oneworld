@@ -3,6 +3,9 @@ import Footer from './common/Footer'
 import Header from './common/Header'
 import Accordion from 'react-bootstrap/Accordion';
 import faq from "./image/644f.png";
+import blog4 from "./image/b4.jpg"
+import blog5 from "./image/b5.jpg"
+import blog6  from "./image/b6.jpg"
 
 
 const Blog = () => {
@@ -22,19 +25,19 @@ const Blog = () => {
                                     <article class="post">
                                         <div class="article-v2">
                                             <figure class="article-thumb">
-                                                <a href="#">
-                                                    <img src="https://unsplash.it/600/400/?random" alt="blog image" />
+                                                <a href="/">
+                                                    <img src={blog4}  alt="blogimage" />
                                                 </a>
                                             </figure>
 
                                             <div class="article-content-main">
                                                 <div class="article-header">
-                                                    <h2 class="entry-title"><a href="#">The day you become better.</a></h2>
+                                                    <h2 class="entry-title"><a href="/">The day you become better.</a></h2>
                                                     <div class="entry-meta">
                                                         <div class="entry-date">July 25,2017</div>
 
                                                         <div class="entry-cat">
-                                                            <a href="#">Halie Rose</a>
+                                                            <a href="/">Halie Rose</a>
                                                         </div>
 
                                                     </div>
@@ -48,12 +51,12 @@ const Blog = () => {
                                                 <div class="article-footer">
                                                     <div class="row">
                                                         <div class="col-6 text-left footer-link">
-                                                            <a href="#" class="more-link">Read More</a>
+                                                            <a href="/" class="more-link">Read More</a>
                                                         </div>
 
                                                         <div class="col-6 text-right footer-meta">
-                                                            <a href="#">65 <i class="pe-7s-comment"></i></a>
-                                                            <a href="#">50 <i class="pe-7s-share"></i></a>
+                                                            <a href="/">65 <i class="pe-7s-comment"></i></a>
+                                                            <a href="/">50 <i class="pe-7s-share"></i></a>
                                                         </div>
 
                                                     </div>
@@ -73,19 +76,19 @@ const Blog = () => {
                                     <article class="post">
                                         <div class="article-v2">
                                             <figure class="article-thumb">
-                                                <a href="#">
-                                                    <img src="https://unsplash.it/900/600/?random" alt="blog image" />
+                                                <a href="/">
+                                                <img src={blog5} alt="blog image1" />
                                                 </a>
                                             </figure>
 
                                             <div class="article-content-main">
                                                 <div class="article-header">
-                                                    <h2 class="entry-title"><a href="#">The day you become better.</a></h2>
+                                                    <h2 class="entry-title"><a href="/">The day you become better.</a></h2>
                                                     <div class="entry-meta">
                                                         <div class="entry-date">July 25,2017</div>
 
                                                         <div class="entry-cat">
-                                                            <a href="#">Halie Rose</a>
+                                                            <a href="/">Halie Rose</a>
                                                         </div>
 
                                                     </div>
@@ -99,12 +102,12 @@ const Blog = () => {
                                                 <div class="article-footer">
                                                     <div class="row">
                                                         <div class="col-6 text-left footer-link">
-                                                            <a href="#" class="more-link">Read More</a>
+                                                            <a href="/" class="more-link">Read More</a>
                                                         </div>
 
                                                         <div class="col-6 text-right footer-meta">
-                                                            <a href="#">65 <i class="pe-7s-comment"></i></a>
-                                                            <a href="#">50 <i class="pe-7s-share"></i></a>
+                                                            <a href="/">65 <i class="pe-7s-comment"></i></a>
+                                                            <a href="/">50 <i class="pe-7s-share"></i></a>
                                                         </div>
 
                                                     </div>
@@ -124,19 +127,19 @@ const Blog = () => {
                                     <article class="post">
                                         <div class="article-v2">
                                             <figure class="article-thumb">
-                                                <a href="#">
-                                                    <img src="https://unsplash.it/500/330/?random" alt="blog image" />
+                                                <a href="/">
+                                                <img src={blog6} alt="blog image2" />
                                                 </a>
                                             </figure>
 
                                             <div class="article-content-main">
                                                 <div class="article-header">
-                                                    <h2 class="entry-title"><a href="#">The day you become better.</a></h2>
+                                                    <h2 class="entry-title"><a href="/">The day you become better.</a></h2>
                                                     <div class="entry-meta">
                                                         <div class="entry-date">July 25,2017</div>
 
                                                         <div class="entry-cat">
-                                                            <a href="#">Halie Rose</a>
+                                                            <a href="/">Halie Rose</a>
                                                         </div>
 
                                                     </div>
@@ -150,12 +153,12 @@ const Blog = () => {
                                                 <div class="article-footer">
                                                     <div class="row">
                                                         <div class="col-6 text-left footer-link">
-                                                            <a href="#" class="more-link">Read More</a>
+                                                            <a href="/" class="more-link">Read More</a>
                                                         </div>
 
                                                         <div class="col-6 text-right footer-meta">
-                                                            <a href="#">65 <i class="pe-7s-comment"></i></a>
-                                                            <a href="#">50 <i class="pe-7s-share"></i></a>
+                                                            <a href="/">65 <i class="pe-7s-comment"></i></a>
+                                                            <a href="/">50 <i class="pe-7s-share"></i></a>
                                                         </div>
 
                                                     </div>

@@ -1,6 +1,4 @@
 import React from 'react'
-
-import serviceimg from "./image/growth.png"
 import sales from "./image/sales.png"
 import lithum from "./image/lithium1.png"
 import Header from './common/Header'

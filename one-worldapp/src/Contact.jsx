@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import emailjs from '@emailjs/browser';
 import Header from './common/Header'
 import Footer from './common/Footer'
-import contactimg from "./image/TD.png"
 import Alert from 'react-bootstrap/Alert';
 
 

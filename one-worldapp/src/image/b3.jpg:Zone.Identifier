@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=http://localhost:3000/
+HostUrl=https://fastly.picsum.photos/id/88/500/330.jpg?hmac=kz1HjljrpA4Zz6RseYPZ6_l093Qf_TNOantaEdvekes

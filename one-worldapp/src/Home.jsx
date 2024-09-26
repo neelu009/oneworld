@@ -1,9 +1,6 @@
 import React from 'react'
 import Header from './common/Header'
 import Footer from './common/Footer'
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 // import background from "./image/2main.jpg";
 import background from "./image/85.jpg";
 import background1 from "./image/2main.jpg";
@@ -14,16 +11,16 @@ import financial from "./image/financial.png";
 import nature from "./image/natural.png";
 import gro from "./image/gro.png";
 import ecosystem from "./image/batter.png";
-import morden from "./image/modern-nature.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Nav from 'react-bootstrap/Nav';
-import Tab from 'react-bootstrap/Tab';
 import expertise from "./image/finance.gif";
 import recordtop from "./image/16.gif";
 import network from "./image/1-A.gif";
 import team from "./image/166.gif";
 import charts from "./image/chart.png";
+import blog1 from "./image/b1.jpg"
+import blog2 from "./image/b2.jpg"
+import blog3 from "./image/b3.jpg"
 
 
 
@@ -87,9 +84,9 @@ const Home = () => {
                   </p>
 
                   <div className='main-section-btn button-style text-center'>
-                    <a className="btn btn-light  px-5 py-3" href="#" role="button">
+                    <a className="btn btn-light  px-5 py-3" href="/" role="button">
                       PRESS RELEASE </a>
-                    <a className="btn btn-light  px-5 py-3" href="#" role="button">
+                    <a className="btn btn-light  px-5 py-3" href="/" role="button">
                       EXPLORE RIZE </a></div>
 
                 </div>
@@ -111,9 +108,9 @@ const Home = () => {
                   </p>
 
                   <div className='main-section-btn button-style text-center'>
-                    <a className="btn btn-light px-5 py-3" href="#" role="button">
+                    <a className="btn btn-light px-5 py-3" href="/" role="button">
                       PRESS RELEASE </a>
-                    <a className="btn btn-light px-5 py-3" href="#" role="button">
+                    <a className="btn btn-light px-5 py-3" href="/" role="button">
                       EXPLORE RIZE </a></div>
 
                 </div>
@@ -137,9 +134,9 @@ const Home = () => {
                   </p>
 
                   <div className='main-section-btn button-style text-center'>
-                    <a className="btn btn-light px-5 py-3" href="#" role="button">
+                    <a className="btn btn-light px-5 py-3" href="/" role="button">
                       PRESS RELEASE </a>
-                    <a className="btn btn-light px-5 py-3" href="#" role="button">
+                    <a className="btn btn-light px-5 py-3" href="/" role="button">
                       EXPLORE RIZE </a></div>
 
                 </div>
@@ -163,9 +160,9 @@ const Home = () => {
             </p>
 
             <div className='main-section-btn button-style text-center'>
-              <a className="btn btn-secondary px-5 py-3" href="#" role="button">
+              <a className="btn btn-secondary px-5 py-3" href="/" role="button">
                 PRESS RELEASE </a>
-              <a className="btn btn-secondary px-5 py-3" href="#" role="button">
+              <a className="btn btn-secondary px-5 py-3" href="/" role="button">
                 EXPLORE RIZE </a></div>
 
 </div>
@@ -217,8 +214,8 @@ const Home = () => {
                   services—previously accessible to a high-end or
                   more-skilled segment of consumers—to those that are more affordable and accessible to a broader population</p>
                 <div className='invatrion-section-btn '>
-                  <a className="btn px-5 py-3" href="#" role="button">ARK ETFs <span> →</span> </a>
-                  <a className="btn  px-5 py-3" href="#" role="button">
+                  <a className="btn px-5 py-3" href="/" role="button">ARK ETFs <span> →</span> </a>
+                  <a className="btn  px-5 py-3" href="/" role="button">
                     ARK Venture Fund<span> →</span> </a>
 
                 </div>
@@ -265,7 +262,7 @@ const Home = () => {
                       <h2 className="">Here comes the back</h2>
 
                       <p className="">What I think is cool is to have a button at the flipped side, but this would have to bee looked into on mobiles, perharps use javascript to place them out of the flip box?</p>
-                      <p className=""><a href="#" className="btn btn-light btn-colors" role="button">Button</a>
+                      <p className=""><a href="/" className="btn btn-light btn-colors" role="button">Button</a>
 
                       </p>
                     </div>
@@ -291,7 +288,7 @@ const Home = () => {
                       <h2 className="">Here comes the back</h2>
 
                       <p className="">What I think is cool is to have a button at the flipped side, but this would have to bee looked into on mobiles, perharps use javascript to place them out of the flip box?</p>
-                      <p className=""><a href="#" className="btn btn-light btn-colors" role="button">Button</a>
+                      <p className=""><a href="/" className="btn btn-light btn-colors" role="button">Button</a>
 
                       </p>
                     </div>
@@ -306,7 +303,7 @@ const Home = () => {
                   <div className="flipper">
                     <div className="front">
                       <div className="thumbnail">
-                        <img src={gro} lt="#" className="" />
+                        <img src={gro} alt="gro" className="" />
                         <div className="caption text-center">
                           <h3 className="">Heading for Column 1</h3>
 
@@ -318,7 +315,7 @@ const Home = () => {
                       <h2 className="">Here comes the back</h2>
 
                       <p className="">What I think is cool is to have a button at the flipped side, but this would have to bee looked into on mobiles, perharps use javascript to place them out of the flip box?</p>
-                      <p className=""><a href="#" className="btn btn-light btn-colors" role="button">Button</a>
+                      <p className=""><a href="/" className="btn btn-light btn-colors" role="button">Button</a>
 
                       </p>
                     </div>
@@ -342,7 +339,7 @@ const Home = () => {
                       <h2 className="">Here comes the back</h2>
 
                       <p className="">What I think is cool is to have a button at the flipped side, but this would have to bee looked into on mobiles, perharps use javascript to place them out of the flip box?</p>
-                      <p className=""><a href="#" className="btn btn-light btn-colors" role="button">Button</a>
+                      <p className=""><a href="/" className="btn btn-light btn-colors" role="button">Button</a>
 
                       </p>
                     </div>
@@ -366,7 +363,7 @@ const Home = () => {
                       <h2 className="">Here comes the back</h2>
 
                       <p className="">What I think is cool is to have a button at the flipped side, but this would have to bee looked into on mobiles, perharps use javascript to place them out of the flip box?</p>
-                      <p className=""><a href="#" className="btn btn-light btn-colors" role="button">Button</a>
+                      <p className=""><a href="/" className="btn btn-light btn-colors" role="button">Button</a>
 
                       </p>
                     </div>
@@ -390,7 +387,7 @@ const Home = () => {
                       <h2 className="">Here comes the back</h2>
 
                       <p className="">What I think is cool is to have a button at the flipped side, but this would have to bee looked into on mobiles, perharps use javascript to place them out of the flip box?</p>
-                      <p className=""><a href="#" className="btn btn-light btn-colors" role="button">Button</a>
+                      <p className=""><a href="/" className="btn btn-light btn-colors" role="button">Button</a>
 
                       </p>
                     </div>
@@ -464,7 +461,7 @@ const Home = () => {
                 </div>
 
                 <div className='invatrion-section-btn '>
-                  <a className="btn px-5 py-3" href="#" role="button">Send and Receive <span> →</span> </a>
+                  <a className="btn px-5 py-3" href="/" role="button">Send and Receive <span> →</span> </a>
 
 
                 </div>
@@ -638,19 +635,19 @@ const Home = () => {
                   <article class="post">
                     <div class="article-v2">
                       <figure class="article-thumb">
-                        <a href="#">
-                          <img src="https://unsplash.it/600/400/?random" alt="blog image" />
+                        <a href="/">
+                          <img src={blog1} alt="blog image11" />
                         </a>
                       </figure>
 
                       <div class="article-content-main">
                         <div class="article-header">
-                          <h2 class="entry-title"><a href="#">The day you become better.</a></h2>
+                          <h2 class="entry-title"><a href="/">The day you become better.</a></h2>
                           <div class="entry-meta">
                             <div class="entry-date">July 25,2017</div>
 
                             <div class="entry-cat">
-                              <a href="#">Halie Rose</a>
+                              <a href="/">Halie Rose</a>
                             </div>
 
                           </div>
@@ -664,12 +661,12 @@ const Home = () => {
                         <div class="article-footer">
                           <div class="row">
                             <div class="col-6 text-left footer-link">
-                              <a href="#" class="more-link">Read More</a>
+                              <a href="/" class="more-link">Read More</a>
                             </div>
 
                             <div class="col-6 text-right footer-meta">
-                              <a href="#">65 <i class="pe-7s-comment"></i></a>
-                              <a href="#">50 <i class="pe-7s-share"></i></a>
+                              <a href="/">65 <i class="pe-7s-comment"></i></a>
+                              <a href="/">50 <i class="pe-7s-share"></i></a>
                             </div>
 
                           </div>
@@ -689,19 +686,19 @@ const Home = () => {
                   <article class="post">
                     <div class="article-v2">
                       <figure class="article-thumb">
-                        <a href="#">
-                          <img src="https://unsplash.it/900/600/?random" alt="blog image" />
+                        <a href="/">
+                          <img src={blog2} alt="blog image22" />
                         </a>
                       </figure>
 
                       <div class="article-content-main">
                         <div class="article-header">
-                          <h2 class="entry-title"><a href="#">The day you become better.</a></h2>
+                          <h2 class="entry-title"><a href="/">The day you become better.</a></h2>
                           <div class="entry-meta">
                             <div class="entry-date">July 25,2017</div>
 
                             <div class="entry-cat">
-                              <a href="#">Halie Rose</a>
+                              <a href="/">Halie Rose</a>
                             </div>
 
                           </div>
@@ -715,12 +712,12 @@ const Home = () => {
                         <div class="article-footer">
                           <div class="row">
                             <div class="col-6 text-left footer-link">
-                              <a href="#" class="more-link">Read More</a>
+                              <a href="/" class="more-link">Read More</a>
                             </div>
 
                             <div class="col-6 text-right footer-meta">
-                              <a href="#">65 <i class="pe-7s-comment"></i></a>
-                              <a href="#">50 <i class="pe-7s-share"></i></a>
+                              <a href="/">65 <i class="pe-7s-comment"></i></a>
+                              <a href="/">50 <i class="pe-7s-share"></i></a>
                             </div>
 
                           </div>
@@ -740,19 +737,19 @@ const Home = () => {
                   <article class="post">
                     <div class="article-v2">
                       <figure class="article-thumb">
-                        <a href="#">
-                          <img src="https://unsplash.it/500/330/?random" alt="blog image" />
+                        <a href="/">
+                          <img src={blog3} alt="blog image33" />
                         </a>
                       </figure>
 
                       <div class="article-content-main">
                         <div class="article-header">
-                          <h2 class="entry-title"><a href="#">The day you become better.</a></h2>
+                          <h2 class="entry-title"><a href="/">The day you become better.</a></h2>
                           <div class="entry-meta">
                             <div class="entry-date">July 25,2017</div>
 
                             <div class="entry-cat">
-                              <a href="#">Halie Rose</a>
+                              <a href="/">Halie Rose</a>
                             </div>
 
                           </div>
@@ -766,12 +763,12 @@ const Home = () => {
                         <div class="article-footer">
                           <div class="row">
                             <div class="col-6 text-left footer-link">
-                              <a href="#" class="more-link">Read More</a>
+                              <a href="/" class="more-link">Read More</a>
                             </div>
 
                             <div class="col-6 text-right footer-meta">
-                              <a href="#">65 <i class="pe-7s-comment"></i></a>
-                              <a href="#">50 <i class="pe-7s-share"></i></a>
+                              <a href="/">65 <i class="pe-7s-comment"></i></a>
+                              <a href="/">50 <i class="pe-7s-share"></i></a>
                             </div>
 
                           </div>
